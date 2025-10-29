@@ -1,8 +1,8 @@
 "use client"
 
 // @ts-ignore
-import Calendar from "../calendar"
+import Index from "../index"
 
 export default function Home() {
-  return <Calendar />
+  return <Index />
 }
