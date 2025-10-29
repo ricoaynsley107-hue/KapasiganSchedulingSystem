@@ -4,11 +4,8 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
+    ignoreBuildErrors: false, // Keep TypeScript checks
   },
 }
 
-export default nextConfig
+module.exports = nextConfig
