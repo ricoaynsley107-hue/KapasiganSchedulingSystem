@@ -19,7 +19,7 @@ yarn-error.log*
 # env files
 .env*
 
-# vercel
+# vercelg
 .vercel
 
 # typescript
