@@ -1,5 +1,15 @@
 {
-    "require": {
-      "php": "^8.0"
+  "name": "kapasigan/facility-management",
+  "description": "Kapasigan - Facility and Resource Management System",
+  "type": "project",
+  "require": {
+    "php": "^8.0",
+    "phpmailer/phpmailer": "^6.8"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Kapasigan\\": "src/"
     }
   }
+}

@@ -1,9 +1,19 @@
 services:
   - type: web
-    name: kapasigan-scheduling
+    name: kapasigan
     env: php
-    buildCommand: composer install
+    plan: free
+    buildCommand: composer install --no-dev
     startCommand: php -S 0.0.0.0:$PORT
+    healthCheckPath: /login.php
     envVars:
-      - key: PHP_VERSION
-        value: 8.2
+      - key: DB_HOST
+        scope: run
+      - key: DB_USER
+        scope: run
+      - key: DB_PASSWORD
+        scope: run
+      - key: DB_NAME
+        scope: run
+      - key: DB_PORT
+        value: "3306"
